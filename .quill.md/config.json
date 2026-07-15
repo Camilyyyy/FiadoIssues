@@ -1,0 +1,105 @@
+{
+  "product_goal": "Build and ship increments of value that meet the Definition of Done every Sprint.",
+  "definition_of_done": [
+    "Code is peer-reviewed and merged to the trunk.",
+    "Unit tests pass and coverage meets the team threshold."
+  ],
+  "statuses": [
+    {
+      "id": "open",
+      "name": "Open",
+      "color": "#6b7280",
+      "category": "todo"
+    },
+    {
+      "id": "ready",
+      "name": "Ready",
+      "color": "#0ea5e9",
+      "category": "todo"
+    },
+    {
+      "id": "in_progress",
+      "name": "In progress",
+      "color": "#3b82f6",
+      "category": "doing"
+    },
+    {
+      "id": "in_review",
+      "name": "In review",
+      "color": "#f59e0b",
+      "category": "doing"
+    },
+    {
+      "id": "done",
+      "name": "Done",
+      "color": "#10b981",
+      "category": "done"
+    }
+  ],
+  "default_status": "open",
+  "labels": [
+    {
+      "id": "frontend",
+      "name": "Frontend",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "backend",
+      "name": "Backend",
+      "color": "#10b981"
+    },
+    {
+      "id": "bug",
+      "name": "Bug",
+      "color": "#ef4444"
+    },
+    {
+      "id": "prioridad-alta",
+      "name": "Prioridad Alta",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "ux",
+      "name": "UX/UI",
+      "color": "#8b5cf6"
+    }
+  ],
+  "users": [
+    {
+      "id": "dev-1",
+      "name": "Frontend Developer",
+      "email": "front@fiado.test"
+    },
+    {
+      "id": "dev-2",
+      "name": "Backend Developer",
+      "email": "back@fiado.test"
+    },
+    {
+      "id": "qa-1",
+      "name": "QA Engineer",
+      "email": "qa@fiado.test"
+    },
+    {
+      "id": "pm-1",
+      "name": "Product Manager",
+      "email": "pm@fiado.test"
+    }
+  ],
+  "kanban": {
+    "columns": [
+      "open",
+      "ready",
+      "in_progress",
+      "in_review",
+      "done"
+    ]
+  },
+  "gantt": {
+    "group_by": "issue_type",
+    "default_view": "weeks"
+  },
+  "remote": {
+    "cors_proxy": "https://cors.isomorphic-git.org"
+  }
+}
